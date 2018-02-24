@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# PATH=/bin:/sbin:/usr/bin:/usr/sbin
+
+# Файл конфігурації в каталогі $CONFIGDIR. Файл в форматі bash, з визначеними
+# змінними та двома функціями, preexec та postexec. Ці функції виконуються
+# перед початком бекапа та після його завершення.
+CONFIG="local.cfg"
+
+DIR=`dirname $0`
+source "$DIR/duplicity-wrap"
